@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">MobilProje</string>
+    <string name="hello_blank_fragment">Merhaba fragment</string>
+</resources>
