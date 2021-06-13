@@ -9,7 +9,7 @@
         android:id="@+id/fr_list_rv_users"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/darkblue"
+        android:background="@color/blue"
         android:visibility="visible" />
 
 

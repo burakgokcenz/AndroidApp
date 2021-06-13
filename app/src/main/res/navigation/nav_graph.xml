@@ -7,9 +7,12 @@
 
     <fragment
         android:id="@+id/listFragment"
-        android:name="com.live.mobilproje.ui.fragment.ListFragment"
-        android:label="KULLANICI LİSTESİ"
-        tools:layout="@layout/fragment_list" >
+
+           android:name="com.live.mobilproje.ui.fragment.ListFragment"
+        android:label="KİŞİLER"
+
+          tools:layout="@layout/fragment_list" >
+
         <action
             android:id="@+id/action_listFragment_to_detailFragment"
             app:destination="@id/detailFragment" />
@@ -17,7 +20,7 @@
     <fragment
         android:id="@+id/detailFragment"
         android:name="com.live.mobilproje.ui.fragment.DetailFragment"
-        android:label="DETAYLAR"
+        android:label="AYRINTILAR"
         tools:layout="@layout/fragment_detail" >
         <argument
             android:name="userItemDetail"

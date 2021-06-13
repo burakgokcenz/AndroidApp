@@ -1,7 +1,10 @@
 package com.live.mobilproje.ui
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
 import android.view.View
 import android.view.WindowManager
 import androidx.lifecycle.ViewModelProvider
@@ -13,6 +16,7 @@ import com.live.mobilproje.data.repository.MainRepository
 import com.live.mobilproje.ui.base.MainViewModelProviderFactory
 import com.live.mobilproje.ui.vm.MainViewModel
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.toolbar.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -22,7 +26,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-//        setSupportActionBar(ac_ma_toolbar)
+        setSupportActionBar(ac_toolbar)
         this.window.addFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN)
 
         navController = Navigation.findNavController(this, R.id.ac_ma_nav_host_fragment)
@@ -31,6 +35,23 @@ class MainActivity : AppCompatActivity() {
         val mainRepository = MainRepository()
         val viewModelProviderFactory = MainViewModelProviderFactory(application, mainRepository)
         mainViewModel = ViewModelProvider(this, viewModelProviderFactory).get(MainViewModel::class.java)
+
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu): Boolean {
+        menuInflater.inflate(R.menu.menu_item, menu)
+        return true
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        return when (item.itemId) {
+            R.id.hakkinda -> {
+                val intent = Intent(applicationContext, AboutActivity::class.java)
+                startActivity(intent)
+                true
+            }
+            else -> super.onOptionsItemSelected(item)
+        }
     }
 
     override fun onSupportNavigateUp(): Boolean {

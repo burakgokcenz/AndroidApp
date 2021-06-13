@@ -4,15 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <com.google.android.material.appbar.AppBarLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        tools:ignore="MissingConstraints">
-        <androidx.appcompat.widget.Toolbar
-            android:id="@+id/ac_ma_toolbar"
-            android:layout_width="wrap_content"
-            android:layout_height="0dp" />
-    </com.google.android.material.appbar.AppBarLayout>
+    <include layout="@layout/toolbar"></include>
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
