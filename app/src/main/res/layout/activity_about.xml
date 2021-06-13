@@ -34,7 +34,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
+                android:orientation="vertical"
                 android:layout_margin="10dp">
 
                 <TextView
@@ -46,41 +46,41 @@
                 <TextView
                     android:id="@+id/txtStudentNo"
                     android:layout_width="match_parent"
-                    android:layout_height="25dp"
-                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
                     android:text="191130098" />
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_margin="20dp">
+                android:orientation="vertical"
+                android:layout_margin="10dp">
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_weight="2"
-                    android:text="AD SOYAD" />
+                    android:layout_weight="1"
+                    android:text="Ad Soyad" />
 
                 <TextView
                     android:id="@+id/txtName"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_weight="2"
+                    android:layout_weight="1"
                     android:text="BURAK GÖKÇEN" />
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="horizontal"
-                android:layout_margin="20dp">
+                android:orientation="vertical"
+                android:layout_margin="10dp">
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="HAKKIMDA"
+                    android:text="Hakkımda"
                     android:layout_weight="2"/>
 
                 <TextView
@@ -88,7 +88,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="2"
-                    android:text="Merhaba Ben Burak 21 yaşındayım Yazılımla uğraşıyorum aynı zamanda gitaristim. Genel olarak web alanından yürümeyi hedefliyorum." />
+                    android:text="Merhaba ben Burak GÖKÇEN 21 yaşındayım yazılım ile ilgileniyorum ve aynı zamanda gitaristim.Yazılımın Web alanında ilerlemeyi hedefliyorum." />
             </LinearLayout>
 
         </LinearLayout>

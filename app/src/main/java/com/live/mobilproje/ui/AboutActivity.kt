@@ -7,22 +7,17 @@ import kotlinx.android.synthetic.main.toolbar.*
 
 class AboutActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_about)
+
         setSupportActionBar(ac_toolbar)
 
         supportActionBar?.apply {
-
-
-            setDisplayHomeAsUpEnabled(true)
             title = "Hakkında"
+            setDisplayHomeAsUpEnabled(true)
             setDisplayShowHomeEnabled(true)
         }
-        super.onCreate(savedInstanceState)
-
-
-
-        setContentView(R.layout.activity_about)
     }
-
 
     override fun onSupportNavigateUp(): Boolean {
         onBackPressed()
